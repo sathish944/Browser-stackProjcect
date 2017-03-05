@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.ch.occ.utils.ParallelFactory"/>
+  </listeners>
+  <test name="Login_FF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.ch.occ.test.ForgottenPasswordTest">
+        <methods>
+          <include name="forgotPassword"/>
+        </methods>
+      </class> <!-- com.ch.occ.test.ForgottenPasswordTest -->
+      <class name="com.ch.occ.test.LogInTest">
+        <methods>
+          <include name="reportgenerator"/>
+          <include name="time"/>
+          <include name="endtime"/>
+        </methods>
+      </class> <!-- com.ch.occ.test.LogInTest -->
+    </classes>
+  </test> <!-- Login_FF(failed) -->
+  <test name="Login_Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ch.occ.test.LogInTest">
+        <methods>
+          <include name="reportgenerator"/>
+          <include name="login"/>
+          <include name="time"/>
+          <include name="endtime"/>
+        </methods>
+      </class> <!-- com.ch.occ.test.LogInTest -->
+    </classes>
+  </test> <!-- Login_Chrome(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

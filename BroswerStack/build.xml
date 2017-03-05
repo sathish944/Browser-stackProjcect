@@ -1,0 +1,70 @@
+<project name="Test" default="test" basedir=".">
+
+	<property name="testdir" location="resources/classes" />
+	<property name="srcdir" location="src" />
+	<property name="libdir" location="lib" />
+	<property name="testconfig" location="resources/config" />
+	<property name="xmlsuitesdir" location="resources/suitexmls" />
+	<property name="full-compile" value="true" />
+
+	<path id="classpath.base" />
+
+	<path id="classpath.test">
+		<fileset dir="${libdir}">
+			<include name="**/*.jar" />
+		</fileset>
+
+		<pathelement location="${testdir}" />
+		<pathelement location="${srcdir}" />
+		<path refid="classpath.base" />
+	</path>
+
+
+	<taskdef resource="testngtasks">
+		<classpath>
+			<pathelement location="lib\testng-6.9.10.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="test" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="AccountManagementTest.xml" />
+		</testng>
+	</target>
+
+	<target name="browseandshopone" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="BrowseShop1Test.xml" />
+		</testng>
+	</target>
+	
+   <target name="cart" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="cart.xml" />
+		</testng>
+	</target>
+
+	<target name="checkout" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="checkout.xml" />
+		</testng>
+	</target>
+	
+	<target name="checkoutNegative" depends ="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="CheckoutNegativeTest.xml" />
+		</testng>
+	</target>
+
+	<target name="homepage" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="homePage.xml" />
+		</testng>
+	</target>
+
+	<target name="search" depends="">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="search.xml" />
+		</testng>
+	</target>
+</project>

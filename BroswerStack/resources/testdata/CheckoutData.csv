@@ -1,0 +1,2 @@
+email,fname,lname,country,address1,address2,city,stateregion,zipcode,phonenum,cardname,cardtype,cardnumber,cardcvv,expiresmonth,expiresyear
+test123@gmail.com,Test,123,United States,1444 s,Alameda Street,Los Angeles,Alaska,90021,(213)974-3211,Test,visa,4024007130959223,345,10 - October,2033

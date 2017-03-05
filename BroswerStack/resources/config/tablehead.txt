@@ -1,0 +1,10 @@
+<title>OCC Execution report</title>
+<h1>Lenox Test Execution Report</h1>
+<table class ="responstable" id="t01"><h2 style ="padding-left: 20px;"><center>Summary</center></h2>
+  <tr>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Test Suite Name</font color></th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Toatal Test cases</font color></th>		
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Passed Test cases</font color></th>
+	<th bgcolor = "#167F92"><font color = "#FFFFFF">Failed Test cases</font color></th>
+	<th bgcolor = "#167F92"><font color = "#FFFFFF">Pass percentage</font color></th>
+  </tr>

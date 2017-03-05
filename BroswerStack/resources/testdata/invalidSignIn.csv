@@ -1,0 +1,5 @@
+email,Password,errormsg,,,errorid
+testststst,test@1234,Invalid entry. Please enter valid email address, for example, john@smith.com.,CC-login-error
+test@yahoo.com,,Password is mandatory. ,,,CC-login-password-input-error
+,test@123,Email Address is mandatory. ,,,CC-login-error
+ZVvg#fbhsdh@nvdgk.com,test123,Log in unsuccessful. The details entered don't match our records, please try again.,,#CC-messages-login > div.text-danger.cc-error-message

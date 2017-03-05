@@ -1,0 +1,12 @@
+<h2 style="padding-left: 20px"><center><center>Detail Report</center></h2>
+<table class ="responstable" id="hm">
+  <tr>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Test suite name</th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">TestCase name</th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Expected Result</th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Result</th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Error Log</th>
+    <th bgcolor = "#167F92"><font color = "#FFFFFF">Comments</th>
+  
+  </tr>
+  

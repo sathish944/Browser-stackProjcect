@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="methods" thread-count="4">
+	<listeners>
+		<listener class-name="com.ch.occ.utils.ParallelFactory" />
+	</listeners>
+	<test name="Test">
+		<parameter name="remoteurl" value="">
+		</parameter>
+		<classes>
+			<class name="com.ch.occ.test.CheckoutWithOurFrameWork">
+				<methods>
+					<include name="verifyFieldsInCheckoutPage" />
+					<include name="allFieldsBlankInCheckByLoguser" />
+					<include name="checkEntVaildDataShipAddFieldsAndAllMantFields" />
+					<include name="billAddressFilledAllFieldsToCheckout" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
